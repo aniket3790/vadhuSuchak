@@ -2,13 +2,16 @@ const express = require('express')
 const mongoose = require('mongoose')
 const route = require('./Routes/vadhuSuchakRoute')
 const vadhuSuchak = require('./Models/vadhusuchak')
+const cors = require('cors')
 require('dotenv/config')
+
 
 // Initilization
 const app = express()
 
 // middleware
 app.use(express.json())
+app.use(cors())
 
 // Default route
 app.get('/',(req,res)=>{
