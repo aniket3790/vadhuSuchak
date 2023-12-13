@@ -22,8 +22,7 @@ const vadhuSuchakSchema = new mongoose.Schema({
         required:true
     },
     review:{
-        type:String,
-        required:true
+        type:String
     }
 })
 
